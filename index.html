@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
-<body>
-   
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cv</title>
+    <tab rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img src="/img/me2.png" />
+            <h1>Pavel Kudrautsau</h1>
+            <p>Frontend Developer</p>
+          </div>
+          <div class="tabs">
+            <nav class="tabs__items">
+              <a href="#tab_01" class="tabs__item">
+                <img src="/icons/profile.png" alt="" />
+                <h2>About me</h2></a
+              >
+              <a href="#tab_02" class="tabs__item"
+                ><img src="/icons/contact.png" alt="" />
+                <h2>Contact</h2></a
+              >
+              <a href="#tab_03" class="tabs__item">
+                <img src="/icons/presentation.png" alt="" />
+                <h2>Educations</h2></a
+              >
+              <a href="#tab_04" class="tabs__item">
+                <img src="/icons/skills.png" alt="" />
+                <h2>Skills</h2></a
+              >
+              <a href="#tab_05" class="tabs__item"
+                ><img src="/icons/coding (1).png" alt="" />
+                <h2>Code</h2></a
+              >
+            </nav>
+          </div>
+          <!-- <div class="tabs">
+            <div class="tab">
+              <img src="/icons/profile.png" alt="" />
+              <h2>About me</h2>
+            </div>
+            <div class="tab">
+              <img src="/icons/contact.png" alt="" />
+              <h2>Contact</h2>
+            </div>
+            <div class="tab">
+              <img src="/icons/presentation.png" alt="" />
+              <h2>Educations</h2>
+            </div>
+            <div class="tab">
+              <img src="/icons/skills.png" alt="" />
+              <h2>Skills</h2>
+            </div>
+            <div class="tab">
+              <img src="/icons/coding (1).png" alt="" />
+              <h2>Code</h2>
+            </div>
+          </div> -->
+        </div>
+        <div class="moreinfo">
+          <div class="status">
+            <h2>More Information:</h2>
+          </div>
+          <div class="tabs__body">
+            <div id="tab_01" class="info">
+              <h2>About me</h2>
+              <p>
+                I want to connect my life with programming. Development for me is the desired job
+                and a hobby, so I devote most of my time to programming and learning.
+              </p>
+            </div>
+            <div id="tab_02" class="info">
+              <h2>Contact</h2>
+              <p>
+                Phone : +375 33 325 3134 Email: kudravcev92@gmail.com Skype: Pavel Kudrautsau
+                Linkedin: https://www.linkedin.com/in/pavel-kudrautsau92
+              </p>
+            </div>
+            <div id="tab_03" class="info">
+              <h2>Educations</h2>
+              <p>
+                Education: 2021 – IT-Academy by Itransition Course: Developing web applications with
+                React.js Description: Professional course 2020 – IT-Academy Course: Website
+                development using HTML, CSS, and JavaScript Description: Basic course Course:
+                JavaScript Web Application Development Description: Professional course 2010 - 2014
+                – Yanka Kupala State University of Grodno Technological College Specialization:
+                Technician
+              </p>
+            </div>
+            <div id="tab_04" class="info">
+              <h2>Skills</h2>
+              <p>HTML CSS JavaScript React.js</p>
+            </div>
+            <div id="tab_05" class="info">
+              <h2>Code</h2>
+              <p>
+                const lockPaddingValue = window.innerWidth -
+                document.querySelector('.container').offsetWidth + 'px'; if (lockPadding.length > 0)
+                { for (let index = 0; index < lockPadding.length; index++) { const el =
+                lockPadding[index]; el.style.paddingRight = lockPaddingValue; } }
+                body.style.paddingRight = lockPaddingValue; body.classList.add('lock'); unlock =
+                false; setTimeout(function () { unlock = true; }, timeout); }
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </body>
 </html>
