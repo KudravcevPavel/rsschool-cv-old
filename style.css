@@ -12,7 +12,9 @@ h1 {
 }
 
 h2,
-p, li {
+p,
+li,
+pre {
    color: #426696;
    font-weight: 500;
    opacity: 0.8;
@@ -31,7 +33,7 @@ main {
 .glass {
    background: white;
    min-height: 60vh;
-   width: 60%;
+   width: 65%;
    background: linear-gradient(to right bottom,
          rgba(255, 255, 255, 0.7),
          rgba(255, 255, 255, 0.3));
@@ -54,9 +56,8 @@ main {
 }
 
 .circle1 {
-   top: 5%;
-   right: 15%;
-
+   top: 5rem;
+   right: 10%;
 }
 
 .circle2 {
@@ -100,7 +101,6 @@ main {
    bottom: 0.1%;
    width: 33vh;
    right: 20%;
-
    font-weight: 500;
    opacity: 0.8;
 }
@@ -154,5 +154,25 @@ main {
 }
 
 .info:target {
-   display: block;
+   /* display: block; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+
+
+/* Code */
+#code {
+   color: black;
+   display: flex;
+   flex-direction: column;
+}
+
+.red {
+   color: red;
+}
+
+.blue {
+   color: blue;
 }

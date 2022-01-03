@@ -101,18 +101,31 @@
             </div>
             <div id="Code" class="info">
               <h2>Code</h2>
-              <p>
-                const lockPaddingValue = window.innerWidth -
-                document.querySelector('.container').offsetWidth + 'px'; if (lockPadding.length > 0)
-                { for (let index = 0; index < lockPadding.length; index++) { const el =
-                lockPadding[index]; el.style.paddingRight = lockPaddingValue; } }
-                body.style.paddingRight = lockPaddingValue; body.classList.add('lock'); unlock =
-                false; setTimeout(function () { unlock = true; }, timeout); }
-              </p>
+              <pre><span class="red">const</span> cards = document.<span class="blue">querySelectorAll('.card')</span>;
+      
+ <span class="red">for (let </span> i = 0; i < cards.length; i++) { 
+    <span class="red">const</span> card = cards[i]; 
+    card.<span class="blue">addEventListener</span>('mousemove', startRotate);
+    card.<span class="blue">addEventListener</span>('mouseout', stopRotate); 
+  };
+ <span class="red">function</span> <span class="blue">startRotate</span>(event) {
+    <span class="red">const</span> cardItem = this.<span class="blue">querySelector</span>('.card-item'); 
+    <span class="red">const</span> halfHeight = cardItem.<span class="blue">offsetHeight</span> / 2;
+    <span class="red">const</span> halfWidth = cardItem.<span class="blue">offsetWidth</span> / 2; 
+    cardItem.<span class="blue">style.transform</span> = 'rotateX(' +-(event.offsetY - halfHeight)
+       / 10 + 'deg) rotateY(' + (event.offsetX - halfWidth)
+       / 10 + 'deg)'; }; 
+  <span class="red">function</span> stopRotate() { 
+    <span class="red">const</span> cardItem = this.<span class="blue">querySelector</span>('.card-item');
+      cardItem.<span class="blue">style.transform</span> = 'rotate(0)'; };</span
+              ></pre>
             </div>
           </div>
         </div>
+         <div class="circle1"></div>
+         <div class="circle2"></div>
       </section>
+     
     </main>
     <footer>
       <div class="container">
@@ -130,7 +143,7 @@
         </div>
       </div>
     </footer>
-    <div class="circle1"></div>
-    <div class="circle2"></div>
+    
+    
   </body>
 </html>
