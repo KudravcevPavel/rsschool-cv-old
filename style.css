@@ -12,7 +12,7 @@ h1 {
 }
 
 h2,
-p {
+p, li {
    color: #426696;
    font-weight: 500;
    opacity: 0.8;
@@ -30,7 +30,7 @@ main {
 
 .glass {
    background: white;
-   min-height: 80vh;
+   min-height: 60vh;
    width: 60%;
    background: linear-gradient(to right bottom,
          rgba(255, 255, 255, 0.7),
@@ -77,6 +77,34 @@ main {
    border-radius: 2rem;
 }
 
+.container {
+   font-family: 'Montserrat',
+      sans-serif;
+   background: linear-gradient(to right top, #3d615a, #5ed8af);
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.footer-wrap {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   background: linear-gradient(to left top,
+         rgba(255, 255, 255, 0.8),
+         rgba(255, 255, 255, 0.5));
+   border-radius: 2rem;
+   margin: 1rem;
+   position: absolute;
+   z-index: 3;
+   bottom: 0.1%;
+   width: 33vh;
+   right: 20%;
+
+   font-weight: 500;
+   opacity: 0.8;
+}
+
 .tabs__item {
    display: flex;
    margin: 2rem 0rem;
@@ -106,8 +134,9 @@ main {
    display: flex;
    margin-bottom: 10rem;
    margin: 2rem;
-   padding: 2rem 0rem;
+   padding: 2rem 2rem;
    font-size: 25px;
+   flex-direction: column;
 }
 
 .info {
