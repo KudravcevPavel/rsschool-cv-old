@@ -76,6 +76,7 @@ main {
          rgba(255, 255, 255, 0.7),
          rgba(255, 255, 255, 0.3));
    border-radius: 2rem;
+   
 }
 
 .container {
@@ -151,6 +152,7 @@ main {
    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
    padding: 2rem;
    display: none;
+   line-height: 1.5rem;
 }
 
 .info:target {
@@ -162,7 +164,7 @@ main {
 
 
 
-/* Code */
+/* Code */ 
 #code {
    color: black;
    display: flex;
