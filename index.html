@@ -61,8 +61,25 @@
                   and a hobby, so I devote most of my time to programming and learning.
                 </p>
                 <h2>My projects:</h2>
-                <a href="https://kudravcevpavel.github.io/golf/">golfproject</a>
-                <a href="https://kudravcevpavel.github.io/rsschool-cv/">cv</a>
+                <div class="project">
+                  <img src="img/jocke.png" class="poduct" alt="jocke" />
+                  <a
+                    href="https://rolling-scopes-school.github.io/kudravcevpavel-JSFEPRESCHOOL/random-jokes/"
+                    ><p>jocke</p></a
+                  >
+                  <img src="img/memory.png" class="poduct" alt="memory" />
+                  <a
+                    href="https://rolling-scopes-school.github.io/kudravcevpavel-JSFEPRESCHOOL/memory-game/"
+                    ><p>memory</p></a
+                  >
+                  <img src="img/portfolio.png" class="poduct" alt="portfolio" />
+                  <a
+                    href="https://rolling-scopes-school.github.io/kudravcevpavel-JSFEPRESCHOOL/portfolio/"
+                    ><p>portfolio</p></a
+                  >
+                  <img src="img/golf.png" class="poduct" alt="golf" />
+                  <a href="https://kudravcevpavel.github.io/golf/"><p>golfproject</p></a>
+                </div>
               </div>
               <div id="Contact" class="info">
                 <h2>Contact</h2>
@@ -107,46 +124,40 @@
               <code>
                 <div id="Code" class="info">
                   <h2>Code</h2>
-                  <pre><span class="red">const</span> cards = document.<span class="blue">querySelectorAll('.card')</span>;
-              <span class="red">for (let </span> i = 0; i  cards.length; i++) { 
-              <span class="red">const</span> card = cards[i]; 
-              card.<span class="blue">addEventListener</span>('mousemove', startRotate);
-              card.<span class="blue">addEventListener</span>('mouseout', stopRotate);};
-              <span class="red">function</span> <span class="blue">startRotate</span>(event) {
-              <span class="red">const</span> cardItem = this.<span class="blue">querySelector</span>('.card-item'); 
-                <span class="red">const</span> halfHeight = cardItem.<span class="blue">offsetHeight</span> / 2;
-              <span class="red">const</span> halfWidth = cardItem.<span class="blue">offsetWidth</span> / 2; 
-                  cardItem.<span class="blue">style.transform</span> = 'rotateX(' +-(event.offsetY - halfHeight)
-                / 10 + 'deg) rotateY(' + (event.offsetX - halfWidth)
-                  / 10 + 'deg)'; }; 
-                    <span class="red">function</span> stopRotate() { 
-                <span class="red">const</span> cardItem = this.<span class="blue">querySelector</span>('.card-item');
-                cardItem.<span class="blue">style.transform</span> = 'rotate(0)'; }; 
+                  <pre><span class="red">function</span><span class="blue"> convert(input, source, target)</span> <span class="blue"> {</span>
+  <span class="red">let </span>s=0; <span class="red">let</span> str='';
+  <span class="red">for</span> (<span class="red">let</span> i=0; <span class="blue"> i <= input.length; i++) {</span>
+  <span class="blue"> s=s*source.length+source.indexOf(input[i]);</span> 
+   )
+   <span class="red">while</span> (s>0) {
+  <span class="blue"> str=target[s%target.length]+str;
+   s=Math.floor(s/target.length);</span>
+   }
+   <span class="red">return</span><span class="blue"> str ? str : target[0];</span>  
+   <span class="blue">};</span> 
             </pre>
                 </div>
               </code>
             </div>
+            <footer>
+              <div class="footer-wrap">
+                <a href="https://github.com/KudravcevPavel" class="github"
+                  ><img src="img/image1.svg" alt="github"
+                /></a>
+                <div class="location text">
+                  <div class="location-date">2022</div>
+                  <div class="location-location">Grodno, Belarus</div>
+                </div>
+                <a href="https://rs.school/js/" class="rsschool"
+                  ><img src="img/image2.svg" alt="rsschool"
+                /></a>
+              </div>
+            </footer>
           </div>
         </section>
       </main>
     </header>
     <div class="circle1"></div>
     <div class="circle2"></div>
-    <footer>
-      <div class="container">
-        <div class="footer-wrap">
-          <a href="https://github.com/KudravcevPavel" class="github"
-            ><img src="img/image1.svg" alt="github"
-          /></a>
-          <div class="location text">
-            <div class="location-date">2022</div>
-            <div class="location-location">Grodno, Belarus</div>
-          </div>
-          <a href="https://rs.school/js/" class="rsschool"
-            ><img src="img/image2.svg" alt="rsschool"
-          /></a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
