@@ -20,7 +20,7 @@ pre {
    opacity: 0.8;
 }
 
-main {
+header {
    font-family: 'Montserrat',
       sans-serif;
    min-height: 100vh;
@@ -79,7 +79,7 @@ main {
    border-radius: 2rem;
 }
 
-footer {
+.footer-wrapper {
    display: flex;
    flex: content;
 }
@@ -162,8 +162,10 @@ footer {
    color: #426696;
    font-weight: 500;
    opacity: 0.8;
+   position: relative;
+   top: 1rem;
    display: flex;
-   justify-content: flex-start;
+   justify-content: space-evenly;
    flex-direction: row;
 }
 
@@ -171,16 +173,16 @@ footer {
    display: flex;
    flex-direction: row;
    justify-content: center;
-   width: 100px;
-   height: 100px;
+   width: 7rem;
+   height: 7rem;
    border-radius: 1rem;
-   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.212);
 }
 
 
 
 /* Code */
-#code {
+#codes {
    color: black;
    display: flex;
    flex-direction: column;
