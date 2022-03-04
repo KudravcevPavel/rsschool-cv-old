@@ -5,7 +5,7 @@
 }
 
 h1 {
-   color: #426696;
+   color: #1f1d1dc4;
    font-weight: 600;
    font-size: 2rem;
    opacity: 0.8;
@@ -15,7 +15,7 @@ h2,
 p,
 li,
 pre {
-   color: #426696;
+   color: #1f1d1dc4;
    font-weight: 500;
    opacity: 0.8;
 }
@@ -67,7 +67,7 @@ header {
 }
 
 .dashboard {
-   flex: 1;
+   flex: 1 0 10%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -112,7 +112,7 @@ header {
 }
 
 .moreinfo {
-   flex: 2;
+   flex: 1 1 43%;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
@@ -120,6 +120,7 @@ header {
 
 .user {
    margin-top: 2rem;
+
 }
 
 /* About*/
@@ -131,6 +132,7 @@ header {
    padding: 2rem 2rem;
    font-size: 25px;
    flex-direction: column;
+
 }
 
 .info {
@@ -145,7 +147,8 @@ header {
    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
    padding: 2rem;
    display: none;
-   line-height: 1.3rem;
+
+   line-height: 0.5rem;
 
 }
 
@@ -155,10 +158,12 @@ header {
    flex-wrap: wrap;
    justify-content: space-evenly;
    text-decoration: none;
+
+   line-height: 1.7rem;
 }
 
 .project {
-   line-height: 1.5rem;
+   line-height: 2rem;
    color: #426696;
    font-weight: 500;
    opacity: 0.8;
@@ -167,26 +172,30 @@ header {
    display: flex;
    justify-content: space-evenly;
    flex-direction: row;
+   flex-wrap: wrap;
+   gap: 1rem;
+
 }
 
 .poduct {
    display: flex;
    flex-direction: row;
    justify-content: center;
-   width: 7rem;
-   height: 7rem;
+   width: 6rem;
+   height: 6rem;
    border-radius: 1rem;
    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.212);
+
 }
 
 
-
 /* Code */
-#codes {
+#code {
    color: black;
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
+
 }
 
 .red {
@@ -195,4 +204,121 @@ header {
 
 .blue {
    color: blueviolet;
+}
+
+#linkedin {
+   text-decoration: none;
+   color: #1f1d1dc4;
+}
+
+
+
+@media (max-width: 767px) {
+   .info {
+      margin: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      position: relative;
+      bottom: 3rem;
+      background: linear-gradient(to left top,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.5));
+      border-radius: 1rem;
+      box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+      padding: 2rem;
+      display: none;
+      line-height: 0.5rem;
+
+   }
+
+   .info:target {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      text-decoration: none;
+      line-height: 1.7rem;
+
+   }
+
+   .status {
+      display: flex;
+      margin-bottom: 10rem;
+      margin: 2rem;
+      padding: 2rem 2rem 4rem 0;
+      font-size: 25px;
+      flex-direction: column;
+
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .status {
+      display: flex;
+      margin-bottom: 10rem;
+      margin: 2rem;
+      padding: 2rem 2rem 4rem 0;
+      font-size: 25px;
+      flex-direction: column;
+
+   }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+   .info {
+      margin: 0;
+
+   }
+}
+
+@media (max-width: 1200px) {
+   .glass {
+      background: white;
+      min-height: 580vh;
+      width: 90%;
+      background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)) no-repeat;
+      border-radius: 2rem;
+      z-index: 2;
+      backdrop-filter: blur(2rem);
+      display: flex;
+      flex-wrap: wrap;
+
+   }
+
+   .info {
+      margin: 1rem 1rem;
+
+   }
+
+   .tabs__item {
+      display: flex;
+      margin: 0.2rem 0rem;
+      padding: 1rem 3rem;
+      align-items: center;
+      text-decoration: none;
+   }
+
+   .tabs__item h2 {
+      padding: 0rem 2rem;
+   }
+}
+
+@media (max-width: 1400px) {
+   .glass {
+      background: white;
+      min-height: 50vh;
+      width: 80%;
+      background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)) no-repeat;
+      border-radius: 2rem;
+      z-index: 2;
+      backdrop-filter: blur(2rem);
+      display: flex;
+      flex-wrap: wrap;
+   }
+
 }
