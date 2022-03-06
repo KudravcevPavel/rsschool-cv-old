@@ -24,7 +24,7 @@ header {
    font-family: 'Montserrat',
       sans-serif;
    min-height: 100vh;
-   background: linear-gradient(to right top, #3d615a, #5ed8af) no-repeat;
+   background: linear-gradient(to right top, #c2c4c3, #000000) no-repeat;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -96,7 +96,7 @@ header {
    font-weight: 500;
    opacity: 0.8;
    margin: 0rem 2rem 0rem 2rem;
-   padding-bottom: 3rem;
+   padding: 2rem 0rem;
 }
 
 .tabs__item {
@@ -128,7 +128,7 @@ header {
 .status {
    display: flex;
    margin-bottom: 10rem;
-   margin: 2rem;
+   margin: 2rem 0rem 0rem;
    padding: 2rem 2rem;
    font-size: 25px;
    flex-direction: column;
@@ -147,9 +147,7 @@ header {
    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
    padding: 2rem;
    display: none;
-
    line-height: 0.5rem;
-
 }
 
 .info:target {
@@ -158,7 +156,6 @@ header {
    flex-wrap: wrap;
    justify-content: space-evenly;
    text-decoration: none;
-
    line-height: 1.7rem;
 }
 
@@ -166,7 +163,7 @@ header {
    line-height: 2rem;
    color: #426696;
    font-weight: 500;
-   opacity: 0.8;
+   opacity: 0.9;
    position: relative;
    top: 1rem;
    display: flex;
@@ -174,7 +171,6 @@ header {
    flex-direction: row;
    flex-wrap: wrap;
    gap: 1rem;
-
 }
 
 .poduct {
@@ -183,7 +179,7 @@ header {
    justify-content: center;
    width: 6rem;
    height: 6rem;
-   border-radius: 1rem;
+   border-radius: 3rem;
    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.212);
 
 }
@@ -211,47 +207,51 @@ header {
    color: #1f1d1dc4;
 }
 
+@media (min-width: 368px) and (max-width: 660px) {
 
-
-@media (max-width: 767px) {
-   .info {
-      margin: 1rem 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      position: relative;
-      bottom: 3rem;
-      background: linear-gradient(to left top,
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.5));
-      border-radius: 1rem;
-      box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
-      padding: 2rem;
-      display: none;
-      line-height: 0.5rem;
-
+   .glass {
+      width: 85%;
    }
 
-   .info:target {
+
+   .tabs__item {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      margin: 0;
+      padding: 1rem 0 0 0;
+      align-items: center;
       text-decoration: none;
-      line-height: 1.7rem;
-
    }
 
    .status {
       display: flex;
       margin-bottom: 10rem;
       margin: 2rem;
-      padding: 2rem 2rem 4rem 0;
+      padding: 2rem 2rem 2rem 0;
       font-size: 25px;
       flex-direction: column;
-
    }
+
+   .project {
+      padding: 1rem;
+   }
+
+   .info {
+      flex-direction: column;
+      margin: 0;
+   }
+
+   pre {
+      display: flex;
+      flex-direction: column;
+      line-height: 1rem;
+   }
+
+
+
+
 }
+
 
 @media (min-width: 768px) and (max-width: 991px) {
    .status {
@@ -261,36 +261,35 @@ header {
       padding: 2rem 2rem 4rem 0;
       font-size: 25px;
       flex-direction: column;
-
    }
+
+   .glass {
+      min-height: 100vh;
+      width: 90%;
+   }
+
 }
+
 
 @media (min-width: 991px) and (max-width: 1199px) {
-   .info {
-      margin: 0;
 
+   .glass {
+      width: 80%;
+   }
+
+   .tabs__item {
+      display: flex;
+      margin: 0.2rem 0rem;
+      padding: 1rem 3rem;
+      align-items: center;
+      text-decoration: none;
    }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
+
    .glass {
-      background: white;
-      min-height: 580vh;
-      width: 90%;
-      background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.7),
-            rgba(255, 255, 255, 0.3)) no-repeat;
-      border-radius: 2rem;
-      z-index: 2;
-      backdrop-filter: blur(2rem);
-      display: flex;
-      flex-wrap: wrap;
-
-   }
-
-   .info {
-      margin: 1rem 1rem;
-
+      width: 70%;
    }
 
    .tabs__item {
@@ -304,21 +303,14 @@ header {
    .tabs__item h2 {
       padding: 0rem 2rem;
    }
-}
 
-@media (max-width: 1400px) {
-   .glass {
-      background: white;
-      min-height: 50vh;
-      width: 80%;
-      background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.7),
-            rgba(255, 255, 255, 0.3)) no-repeat;
-      border-radius: 2rem;
-      z-index: 2;
-      backdrop-filter: blur(2rem);
-      display: flex;
-      flex-wrap: wrap;
+   .circle1 {
+      height: 12rem;
+      width: 12rem;
    }
 
+   .circle2 {
+      height: 12rem;
+      width: 12rem;
+   }
 }
