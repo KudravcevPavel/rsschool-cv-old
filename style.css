@@ -58,12 +58,73 @@ header {
 
 .circle1 {
    top: 5%;
-   right: 10%;
+   right: 5%;
+   animation-name: square;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-delay: 0.5s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-fill-mode: backwards;
+   animation-play-state: running;
 }
+
+@keyframes square {
+   0% {
+      right: 5%;
+      top: 5%;
+   }
+
+   25% {
+      right: 5%;
+      top: 75%;
+   }
+
+   50% {
+      top: 75%;
+      right: 85%;
+   }
+
+   75% {
+      right: 85%;
+      top: 5%;
+   }
+}
+
 
 .circle2 {
    bottom: 5%;
-   left: 10%;
+   left: 5%;
+   animation-name: circle;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-delay: 0.5s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-fill-mode: backwards;
+   animation-play-state: running;
+}
+
+@keyframes circle {
+   0% {
+      left: 5%;
+      bottom: 5%;
+   }
+
+   25% {
+      left: 5%;
+      bottom: 75%;
+   }
+
+   50% {
+      bottom: 75%;
+      left: 85%;
+   }
+
+   75% {
+      left: 85%;
+      bottom: 5%;
+   }
 }
 
 .dashboard {
@@ -96,7 +157,7 @@ header {
    font-weight: 500;
    opacity: 0.8;
    margin: 0rem 2rem 0rem 2rem;
-   padding: 2rem 0rem;
+   padding: 1rem 0rem 1rem 0rem;
 }
 
 .tabs__item {
@@ -145,7 +206,7 @@ header {
          rgba(255, 255, 255, 0.5));
    border-radius: 1rem;
    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
-   padding: 2rem;
+   padding: 1.5rem;
    display: none;
    line-height: 0.5rem;
 }
@@ -170,7 +231,8 @@ header {
    justify-content: space-evenly;
    flex-direction: row;
    flex-wrap: wrap;
-   gap: 1rem;
+   gap: 2rem;
+   padding: 1rem;
 }
 
 .poduct {
@@ -180,7 +242,7 @@ header {
    width: 6rem;
    height: 6rem;
    border-radius: 3rem;
-   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.212);
+   box-shadow: 16px 6px 8px rgba(0, 0, 0, 0.212);
 
 }
 
@@ -216,9 +278,8 @@ header {
 
    .tabs__item {
       display: flex;
-      flex-direction: column;
-      margin: 0;
-      padding: 1rem 0 0 0;
+      margin: 0.2rem 0rem;
+      padding: 1rem 3rem;
       align-items: center;
       text-decoration: none;
    }
@@ -247,34 +308,21 @@ header {
       line-height: 1rem;
    }
 
+   .circle1 {
+      display: none;
+   }
 
+   .circle2 {
+      display: none;
+   }
 
 
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
-   .status {
-      display: flex;
-      margin-bottom: 10rem;
-      margin: 2rem;
-      padding: 2rem 2rem 4rem 0;
-      font-size: 25px;
-      flex-direction: column;
-   }
-
+@media (min-width: 668px) and (max-width: 991px) {
    .glass {
-      min-height: 100vh;
       width: 90%;
-   }
-
-}
-
-
-@media (min-width: 991px) and (max-width: 1199px) {
-
-   .glass {
-      width: 80%;
    }
 
    .tabs__item {
@@ -284,12 +332,45 @@ header {
       align-items: center;
       text-decoration: none;
    }
+
+   .circle1 {
+      display: none;
+   }
+
+   .circle2 {
+      display: none;
+   }
+}
+
+
+@media (min-width: 991px) and (max-width: 1199px) {
+
+   .glass {
+      width: 90%;
+   }
+
+   .tabs__item {
+      display: flex;
+      margin: 0.2rem 0rem;
+      padding: 1rem 3rem;
+      align-items: center;
+      text-decoration: none;
+   }
+
+   .circle1 {
+      display: none;
+   }
+
+   .circle2 {
+      display: none;
+   }
+
 }
 
 @media (min-width: 1200px) {
 
    .glass {
-      width: 70%;
+      width: 80%;
    }
 
    .tabs__item {
